@@ -1,0 +1,210 @@
+/* Place CSS styles here */
+
+* {
+  box-sizing: border-box;
+}
+
+.l-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+/* View using phones */
+@media (max-width: 480px) {
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+/* View using desktop */
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(99, 72, 0);
+  }
+}
+
+label {
+  color: rgb(0, 0, 0);
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  /* need to know how to set max width without changing comment box */
+  width: 100%;
+}
+
+label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+form {
+  max-width: 500px;
+  display: block;
+  /* width: 80%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  text-align: center;
+}
+
+img {
+ width: 100%;
+ height: auto;
+}
+
+h2 {
+  color: rgb(135, 17, 135);
+}
+
+p {
+  color: #00c200;
+}
+
+nav a,
+.my-button {
+  display: inline-flex;
+  padding: 16px;
+  border: 1px solid rgb(0, 0, 0);
+  color: #a52a2a;
+  background-color: #181818;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  transition: all .25s ease;
+  width: auto;
+}
+
+nav a:hover,
+.my-button:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ce8600;
+}
+
+.my-secondary-button {
+  background-color: #181818;
+  color: #940000;
+}
+
+.my-secondary-button:hover {
+  color: #ce8600;
+  background-color: #630000;
+}
+
+/* Site Layout */
+
+.site-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  border: 3px solid #000000;
+  
+  justify-content: space-between;
+  background-color: #500000;
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.shield-logo {
+  width: 90px;
+}
+
+.site-info-main {
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-footer {
+  background-color: #ffc0cb
+}
+
+.axolotl-Section {
+  display: flex;
+  gap: 24px;  
+  /* border: 1px solid #000000;
+  border-radius: 8px; */
+}
+
+/* for phone */
+@media (max-width: 767px) {
+  .axolotl-Section {
+    flex-direction: column;
+  }
+}
+
+.axolotl-Information {
+  background-color: rgb(202, 135, 0)
+}
+
