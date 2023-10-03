@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.l-hidden {
+.h2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -114,7 +114,7 @@ h2 {
 }
 
 p {
-  color: #00c200;
+  color: #000000;
 }
 
 nav a,
@@ -175,6 +175,10 @@ nav a:hover,
 
 .shield-logo {
   width: 90px;
+}
+
+.hero-main {
+  width: 100%;
 }
 
 .site-info-main {
